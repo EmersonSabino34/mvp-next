@@ -1,3 +1,4 @@
+
 export default function Cadastro() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-600 via-purple-700 to-purple-900 p-6">

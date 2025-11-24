@@ -1,8 +1,9 @@
 "use client";
+
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 
-export default function Header() {
+export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
@@ -15,7 +16,7 @@ export default function Header() {
         </h1>
 
         {/* Menu Desktop */}
-        <nav className="hidden md:flex gap-8 text-lg font-medium">
+        <nav className="hidden md:flex gap-8 text-lg font-medium shadow p-3">
           <a href="/dashboard" className="hover:text-green-300 transition">Dashboard</a>
           <a href="/treinos" className="hover:text-green-300 transition">Treinos</a>
           <a href="/desafios" className="hover:text-green-300 transition">Desafios</a>
