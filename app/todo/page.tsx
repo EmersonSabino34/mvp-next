@@ -1,12 +1,20 @@
+import { FaPlus, FaRegTrashAlt } from "react-icons/fa";
+
 export default function Todo() {
-    return(
+    return (
         <div>
             <h1>Todo Page</h1>
-            <form className="flex flex-col gap-2 w-96 mx-auto">
-                <input type="text" placeholder="New Todo" className="bg-amber-100 p-2" />
-                <input type="text" placeholder="Descrição" className="bg-amber-100 p-2"  />
-                <button type="submit">Add Todo</button>
+            <h2>versão 2</h2>
+
+            <form>
+                <input type="text" placeholder="New todo" />
+                <button 
+                    type="submit" 
+                    className="bg-violet-500 w-20.5 flex gap-2 items-center justify-center text-white px-5 py-1 rounded-full"
+                >   Add <FaPlus /> </button>
+
+                <button>Remover <FaRegTrashAlt /></button>
             </form>
         </div>
-    )
+    );
 }
