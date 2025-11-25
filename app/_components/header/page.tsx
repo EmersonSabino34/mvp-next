@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import Link from "next/link";
 
-export function Header() {
+export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
@@ -17,10 +18,10 @@ export function Header() {
 
         {/* Menu Desktop */}
         <nav className="hidden md:flex gap-8 text-lg font-medium shadow p-3">
-          <a href="/dashboard" className="hover:text-green-300 transition">Dashboard</a>
-          <a href="/treinos" className="hover:text-green-300 transition">Treinos</a>
-          <a href="/desafios" className="hover:text-green-300 transition">Desafios</a>
-          <a href="/perfil" className="hover:text-green-300 transition">Perfil</a>
+          <Link href="/" className="hover:text-green-300 transition">Home</Link>
+          <Link href="/RecentWorkouts" className="hover:text-green-300 transition">Treinos</Link>
+          <Link href="/todo" className="hover:text-green-300 transition">Desafios</Link>
+          <Link href="/perfil" className="hover:text-green-300 transition">Perfil</Link>
         </nav>
 
         {/* Botão Mobile */}
@@ -36,10 +37,10 @@ export function Header() {
       {open && (
         <nav className="md:hidden bg-purple-900/70 backdrop-blur-2xl border-t border-white/10">
           <ul className="flex flex-col text-lg p-6 space-y-4 font-medium">
-            <a href="/dashboard" onClick={() => setOpen(false)} className="hover:text-green-300">Dashboard</a>
-            <a href="/treinos" onClick={() => setOpen(false)} className="hover:text-green-300">Treinos</a>
-            <a href="/desafios" onClick={() => setOpen(false)} className="hover:text-green-300">Desafios</a>
-            <a href="/perfil" onClick={() => setOpen(false)} className="hover:text-green-300">Perfil</a>
+            <Link href="/" onClick={() => setOpen(false)} className="hover:text-green-300">Home</Link>
+            <Link href="/RecentWorkouts" onClick={() => setOpen(false)} className="hover:text-green-300">Treinos</Link>
+            <Link href="/todo" onClick={() => setOpen(false)} className="hover:text-green-300">Desafios</Link>
+            <Link href="/perfil" onClick={() => setOpen(false)} className="hover:text-green-300">Perfil</Link>
           </ul>
         </nav>
       )}

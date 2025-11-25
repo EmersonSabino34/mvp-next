@@ -8,12 +8,14 @@ export default function Todo() {
 
             <form>
                 <input type="text" placeholder="New todo" />
-                <button 
-                    type="submit" 
-                    className="bg-violet-500 w-20.5 flex gap-2 items-center justify-center text-white px-5 py-1 rounded-full"
-                >   Add <FaPlus /> </button>
+                <button
+                    type="submit"
+                    className="bg-violet-500 flex gap-2 items-center justify-center text-white px-5 py-1 rounded-full"
+                >
+                    Add <FaPlus />
+                </button>
 
-                <button>Remover <FaRegTrashAlt /></button>
+                <button type="button" className="ml-3">Remover <FaRegTrashAlt /></button>
             </form>
         </div>
     );
