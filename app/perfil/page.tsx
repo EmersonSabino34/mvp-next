@@ -1,4 +1,4 @@
-import StatCard from "../_components/StatCard"
+import { StatCard } from "../_components"
 
 export default function PerfilPage() {
   return (
