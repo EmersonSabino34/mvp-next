@@ -3,6 +3,7 @@
 
 # FitnessAI – App Inicial com Login e Cadastro (Next.js + TailwindCSS)
 
+
 </div>
 
 Este projeto é um app web moderno e responsivo para começar uma plataforma de treinos personalizados com IA.  
