@@ -7,7 +7,6 @@
 Este projeto é um app web moderno e responsivo para começar uma plataforma de treinos personalizados com IA.  
 Inclui login, cadastro e um header bonito e funcional, tudo feito em **Next.js + TailwindCSS**.
 
-
 ---
 
 ## 🚀 Tecnologias usadas
