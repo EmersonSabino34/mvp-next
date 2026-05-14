@@ -1,6 +1,5 @@
 <div align='center'>
 
-
 # FitnessAI – App Inicial com Login e Cadastro (Next.js + TailwindCSS)
 
 
